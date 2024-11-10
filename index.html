@@ -5,85 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC4CI</title>
     <style>
-        /* Container for the header */
+        /* Main header container */
         header {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
             padding: 10px;
             background-color: #f8f9fa;
-            position: relative;
+            border-bottom: 2px solid #343a40;
         }
-        
-        /* Left section for "CC4CI" text */
-        .header-section-cc4ci {
+
+        /* Left section for "CC4CI" text and logo */
+        .header-section-left {
             flex: 1; /* Takes up one-fifth of the header */
-            text-align: left;
-            font-size: 1.5em;
-            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
             padding-left: 10px;
         }
-        
-        /* Center section for main title and logo */
+
+        .header-section-left p {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        .header-section-left img {
+            max-height: 50px;
+            margin-top: 10px;
+        }
+
+        /* Center section for main title */
         .header-section-title {
             flex: 4; /* Takes up four-fifths of the header */
-            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        /* Logo styling */
-        .header-section-title img {
-            max-height: 50px;
-            margin-left: 10px;
-        }
-
-        /* Styling for the subtitle and description */
-        .header-section-3 {
             text-align: center;
-            font-size: 1em;
-            margin-top: 5px;
         }
-        
+
+        .header-section-title h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
         /* Navigation bar styling */
         nav {
             background-color: #343a40;
             padding: 10px;
             text-align: center;
         }
-        
+
         nav a {
             color: white;
             margin: 0 10px;
             text-decoration: none;
         }
-        
+
         nav a:hover {
             text-decoration: underline;
+        }
+
+        /* Subtitle and description below nav */
+        .header-subtitle {
+            text-align: center;
+            font-size: 1em;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
 <header> 
-    <div class="header-section-cc4ci">
+    <!-- Left section with "CC4CI" text and logo -->
+    <div class="header-section-left">
         <p>CC4CI</p>
+        <img src="CC4CI-logo.jpg" alt="CC4CI Logo">
     </div>
+
+    <!-- Centered title -->
     <div class="header-section-title">
         <h1>The Caribbean Center for Collective Intelligence (CC4CI)</h1>
-        <img src="CC4CI-logo.jpg" alt="C4CI Logo">
     </div>
 </header>
 
-<div class="header-section-3">
+<!-- Navigation bar below header -->
+<nav>
+    <p><a href="index.html">Home</a> <a href="about.html">About</a> <a href="research.html">Research</a> 
+       <a href="resources.html">Resources</a> <a href="sponsors.html">Sponsors</a> <a href="events.html">Events</a> 
+       <a href="news.html">News</a> <a href="publications.html">Publications</a>
+    </p>
+</nav>
+
+<!-- Subtitle section below navigation -->
+<div class="header-subtitle">
     <h2>Ignite Innovation, Inspire Action</h2>
     <p>Address global challenges through collective intelligence and innovative thinking</p>
 </div>
-
-<nav>
-    <p><a href="index.html">Home</a> <a href="about.html">About</a> <a href="research.html">Research</a> <a href="resources.html">Resources</a> <a href="sponsors.html">Sponsors</a> <a href="events.html">Events</a> <a href="news.html">News</a> <a href="publications.html">Publications</a></p>
-</nav>
 
 </body>
 </html>
