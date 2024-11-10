@@ -8,45 +8,41 @@
         /* Main header container */
         header {
             display: flex;
+            align-items: center;
             padding: 10px;
             background-color: white;
             border-bottom: 2px solid #e0e0e0;
         }
 
-        /* Left section for "CC4CI" text and logo */
-        .header-section-left {
-            flex: 1; /* Takes up one-fifth of the header */
+        /* Logo section */
+        .header-logo {
+            max-height: 80px; /* Full height of the header */
+            margin-right: 10px;
+        }
+
+        /* Text section next to the logo */
+        .header-text {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding-left: 10px;
+            justify-content: center;
+            margin-right: 20px;
+            text-align: left;
         }
 
-        .header-section-left p {
-            font-size: 1.5em;
-            font-weight: bold;
+        .header-text p {
             margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* "CC4CI" styled to span two lines, using a narrow font */
+        .header-cc4ci {
+            font-size: 2.5em;
+            font-family: Arial, sans-serif; /* Narrower font */
+            font-weight: bold;
+            line-height: 1em;
             color: #333;
             text-align: center;
-        }
-
-        .header-section-left img {
-            max-height: 50px;
-            margin-top: 5px;
-        }
-
-        /* Center section for main title */
-        .header-section-title {
-            flex: 4; /* Takes up four-fifths of the header */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .header-section-title h1 {
-            font-size: 1.5em;
-            margin: 0;
         }
 
         /* Navigation bar styling */
@@ -81,19 +77,22 @@
 <body>
 
 <header> 
-    <!-- Left section with "CC4CI" text and logo, centered -->
-    <div class="header-section-left">
-        <p>CC4CI</p>
-        <img src="CC4CI-logo.jpg" alt="CC4CI Logo">
+    <!-- Logo on the left, occupying the full height of the header -->
+    <img src="CC4CI-logo.jpg" alt="CC4CI Logo" class="header-logo">
+
+    <!-- Two lines of justified text to the right of the logo -->
+    <div class="header-text">
+        <p>The Caribbean Centre for</p>
+        <p>Collective Intelligence</p>
     </div>
 
-    <!-- Centered title -->
-    <div class="header-section-title">
-        <h1>The Caribbean Center for Collective Intelligence (CC4CI)</h1>
+    <!-- "CC4CI" text in a large, narrow font, aligned vertically -->
+    <div class="header-cc4ci">
+        CC4CI
     </div>
 </header>
 
-<!-- Navigation bar below header, with updated color for links -->
+<!-- Navigation bar below header -->
 <nav>
     <p><a href="index.html">Home</a> <a href="about.html">About</a> <a href="research.html">Research</a> 
        <a href="resources.html">Resources</a> <a href="sponsors.html">Sponsors</a> <a href="events.html">Events</a> 
