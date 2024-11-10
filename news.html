@@ -1,24 +1,115 @@
-<header>
-    <div class="header-section-1">
-        <h1>The Caribbean Center for Collective Intelligence (CC4CI)</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC4CI</title>
+    <style>
+        /* Main header container */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        /* Logo section on the far left */
+        .header-logo {
+            max-height: 80px; /* Full height of the header */
+            margin-right: 10px;
+        }
+
+        /* "CC4CI" text styled to span two lines, using a narrow font */
+        .header-cc4ci {
+            font-size: 2.5em;
+            font-family: Arial, sans-serif; /* Narrower font */
+            font-weight: bold;
+            line-height: 1em;
+            color: #333;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        /* Text section next to "CC4CI" */
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .header-text p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        nav a {
+            color: #007bff; /* Suitable contrasting color */
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Subtitle and description below nav */
+        .header-subtitle {
+            text-align: center;
+            font-size: 1em;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header> 
+    <!-- Logo on the far left -->
+    <img src="CC4CI-logo.jpg" alt="CC4CI Logo" class="header-logo">
+
+    <!-- "CC4CI" text positioned to the right of the logo -->
+    <div class="header-cc4ci">
+        CC4CI
     </div>
-    <div class="header-section-2"><img src="CC4CI-logo.jpg" alt="C4CI Logo"></div>
-    <div class="header-section-3">
-        <h2>Ignite Innovation, Inspire Action</h2>
-        <p>Address global challenges through collective intelligence and innovative thinking</p>
+
+    <!-- Two lines of justified text to the right of "CC4CI" -->
+    <div class="header-text">
+        <p>The Caribbean Centre for</p>
+        <p>Collective Intelligence</p>
     </div>
 </header>
+
+<!-- Navigation bar below header -->
 <nav>
-    <p><a href="index.html">Home</a> <a href="about.html">About</a> <a href="research.html">Research</a> <a href="resources.html">Resources</a> <a href="sponsors.html">Sponsors</a> <a href="events.html">Events</a> <a href="news.html">News</a> <a href="publications.html">Publications</a></p>
+    <p><a href="index.html">Home</a> <a href="about.html">About</a> <a href="research.html">Research</a> 
+       <a href="resources.html">Resources</a> <a href="sponsors.html">Sponsors</a> <a href="events.html">Events</a> 
+       <a href="news.html">News</a> <a href="publications.html">Publications</a>
+    </p>
 </nav>
 
-    <h1>News</h1>
+<!-- Subtitle section below navigation -->
+<div class="header-subtitle">
+    <h2>Ignite Innovation, Inspire Action</h2>
+    <p>Address global challenges through collective intelligence and innovative thinking</p>
+</div>
+<h1>News</h1>
     <ul>
         <li>2024-10-06: Newly released <a href="https://youtu.be/9CYZ6f1ExKQ">deep dive video</a> on the Change the World University Challenge.</li>
         <li>News updates on contests, collaborations, research results, etc.</li>
     </ul>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Change the World University Challenge. All Rights Reserved.</p>
-    </footer>
+</body>
+</html>
