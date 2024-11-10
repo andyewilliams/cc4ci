@@ -14,6 +14,17 @@
             border-bottom: 2px solid #e0e0e0;
         }
 
+        /* "CC4CI" styled to span two lines, using a narrow font */
+        .header-cc4ci {
+            font-size: 2.5em;
+            font-family: Arial, sans-serif; /* Narrower font */
+            font-weight: bold;
+            line-height: 1em;
+            color: #333;
+            text-align: center;
+            margin-right: 10px;
+        }
+
         /* Logo section */
         .header-logo {
             max-height: 80px; /* Full height of the header */
@@ -25,7 +36,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-right: 20px;
             text-align: left;
         }
 
@@ -33,16 +43,6 @@
             margin: 0;
             font-size: 1.2em;
             font-weight: bold;
-        }
-
-        /* "CC4CI" styled to span two lines, using a narrow font */
-        .header-cc4ci {
-            font-size: 2.5em;
-            font-family: Arial, sans-serif; /* Narrower font */
-            font-weight: bold;
-            line-height: 1em;
-            color: #333;
-            text-align: center;
         }
 
         /* Navigation bar styling */
@@ -77,18 +77,18 @@
 <body>
 
 <header> 
-    <!-- Logo on the left, occupying the full height of the header -->
+    <!-- "CC4CI" text on the far left -->
+    <div class="header-cc4ci">
+        CC4CI
+    </div>
+
+    <!-- Logo to the right of "CC4CI" -->
     <img src="CC4CI-logo.jpg" alt="CC4CI Logo" class="header-logo">
 
     <!-- Two lines of justified text to the right of the logo -->
     <div class="header-text">
         <p>The Caribbean Centre for</p>
         <p>Collective Intelligence</p>
-    </div>
-
-    <!-- "CC4CI" text in a large, narrow font, aligned vertically -->
-    <div class="header-cc4ci">
-        CC4CI
     </div>
 </header>
 
